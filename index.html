@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fonts Awesome -->
+        <script src="https://kit.fontawesome.com/f0b16844e2.js" crossorigin="anonymous"></script>
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <title>E-Commerce</title>
@@ -18,6 +20,7 @@
                 <span class="navbar-text ms-auto">Contato: (+000) 00 12345-6789</span>
             </div>
         </nav>
+        <!-- Barra de navegação inferior -->
         <section class="bg-dark text-light py-4">
             <div class="container">
                 <div class="row">
@@ -29,8 +32,43 @@
                         </div>
                     </form>
                 </div>
+                <!-- Botão  -->
+                <div class="row justify-content-md-center">
+                    <a class="text-light col-1 mt-3" type="button" data-toggle="collapse" data-target="#categoryDropdown"><i class="fas fa-angle-down"></i></a>
+                </div>
+                <!-- Categorias -->
+                <div class="collapse" id="categoryDropdown">
+                    <ul class="nav mt-3">
+                        <li class="nav-item">
+                            <a href="#1" class="nav-link text-light">Roupas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#2" class="nav-link text-light">Calçados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#3" class="nav-link text-light">Esportes e Fitness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#4" class="nav-link text-light">Brinquedos e Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#5" class="nav-link text-light">Informática</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#6" class="nav-link text-light">Saúde</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#7" class="nav-link text-light">Beleza e Cuidado Pessoal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#8" class="nav-link text-light">Todas as categorais</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
+        <!-- Style -->
+        <style>*{box-shadow: none !important; text-decoration: none !important;}</style>
         <!-- Scripts (Bootstrap) -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
