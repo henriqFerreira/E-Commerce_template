@@ -28,12 +28,12 @@
             </div>
         </section>
         <!-- Barra inferior (navegação) -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
             <div class="container">
                 <!-- Título da barra de navegação -->
                 <a href="" class="navbar-brand">E-Commerce</a>
                 <!-- Botão responsivo -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <button class="navbar-toggler ms-3 order-3" type="button" data-toggle="collapse" data-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Conteúdo da barra de navegação -->
@@ -102,8 +102,69 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Carrinho de compras -->
+                <span class="navbar-text text-light ms-auto">
+                    <a href="#">
+                        Carrinho <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </span>
             </div>
         </nav>
+        <section class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- Barra de pesquisa -->
+                    <form class="form mt-4">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Buscar..." id="navigationBar">
+                            <button class="btn btn-dark" type="Submit">OK</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Slides -->
+                <div class="row d-none d-md-block mt-5">
+                    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Imagem 1 (Inicial) -->
+                            <div class="carousel-item active">
+                                <svg class="d-block w-100" width="1120" height="400" role="img">
+                                    <rect width="100%" height="100%" fill="#212529"></rect>
+                                    <text x="46.5%" y="50%" fill="#f8f9fa">First Slide</text>
+                                </svg>
+                                <div class="carousel-caption d-none d-md-block text-light">
+                                    <h5>Título (Primeira imagem)</h5>
+                                    <p>Isso apenas aparece em telas apartir do tamanho médio</p>
+                                </div>
+                            </div>
+                            <!-- Imagem 2 -->
+                            <div class="carousel-item">
+                                <svg class="d-block w-100" width="1120" height="400" role="img">
+                                    <rect width="100%" height="100%" fill="#212529"></rect>
+                                    <text x="46.5%" y="50%" fill="#f8f9fa">Second Slide</text>
+                                </svg>
+                            </div>
+                            <!-- Imagem 3 -->
+                            <div class="carousel-item">
+                                <svg class="d-block w-100" width="1120" height="400" role="img">
+                                    <rect width="100%" height="100%" fill="#212529"></rect>
+                                    <text x="46.5%" y="50%" fill="#f8f9fa">Third Slide</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Botão de 'próximo'slide' -->
+                        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <!-- Botão de 'slide anterior' -->
+                        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Style -->
         <style>*{box-shadow: none !important; text-decoration: none !important;}</style>
         <!-- Scripts (Bootstrap) -->
